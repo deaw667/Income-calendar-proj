@@ -29,7 +29,7 @@ const CalendarCard = ({
   return (
     <div
       className={`group flex flex-col font-serif border-b-3 shadow-sm relative
-    ${isSelected ? "bg-blue-300" : isprev ? "bg-gray-400" : "bg-indigo-50"} 
+    ${isSelected ? "bg-blue-300" : isprev ? "bg-gray-400" : "bg-white"} 
     text-zinc-950 border-gray-400`}
     >
       {/* Date */}
@@ -50,6 +50,7 @@ const CalendarCard = ({
           </div>
         ))}
       </div>
+
 
       {/* Add Task Button - only visible on hover */}
       <button

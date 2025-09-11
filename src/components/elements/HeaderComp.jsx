@@ -2,7 +2,7 @@ import React from "react";
 
 const HeaderComp = ({ setCalen, date, showCalen, setDate }) => {
   return (
-    <div className="flex flex-wrap items-center gap-4 p-4 bg-[#f8fafd] w-full shadow-lg">
+    <div className="flex flex-wrap items-center gap-4 p-4 bg-[#f8fafd] w-full shadow-lg relative z-10">
       {/* Left Zone */}
       <div className="flex-1 w-full sm:w-auto sm:max-w-[300px]">
         <HeadZone setCalen={setCalen} showCalen={showCalen} />

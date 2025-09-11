@@ -33,7 +33,7 @@ const CalendarList = ({ date, tasks, addTask, activeStartDate,deleteTask }) => {
         {daysName.map((day, i) => (
           <div
             key={i}
-            className="text-xs text-black bg-indigo-100 font-bold px-2 py-1 border-b border-gray-300 text-center"
+            className="text-xs text-black bg-gray-100 font-bold px-2 py-1 border-b border-gray-300 text-center"
           >
             {day}
           </div>

@@ -58,7 +58,7 @@ const Mainpage = () => {
       <div className="flex flex-col h-screen md:flex-row">
         {/* React Calendar */}
         {showCalen && (
-          <div className="flex flex-col items-center max-md:flex-row">
+          <div className="flex flex-col items-center max-md:flex-row pr-5 shadow-lg">
             <CalendarComp
               date={date}
               setDate={setDate}
