@@ -29,7 +29,7 @@ const CalendarList = ({ date, tasks, addTask, activeStartDate,deleteTask }) => {
   return (
     <div>
       {/* Weekday header */}
-      <div className="grid grid-cols-7 max-sm:hidden">
+      <div className="p-1 grid grid-cols-7 max-sm:hidden">
         {daysName.map((day, i) => (
           <div
             key={i}

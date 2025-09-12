@@ -167,41 +167,41 @@
 /* 🔥 Responsive changes */
 @media (max-width: 768px) {
   .react-calendar {
-    width: 100%; /* 🔥 full width on tablets & mobile */
-    font-size: 0.9em; /* 🔥 slightly smaller text */
+    width: 100%;
+    font-size: 0.9em;
   }
 
   .react-calendar--doubleView {
-    width: 100%; /* 🔥 prevent overflow */
+    width: 100%;
   }
 
   .react-calendar--doubleView .react-calendar__viewContainer {
-    flex-direction: column; /* 🔥 stack vertically */
+    flex-direction: column;
   }
 
   .react-calendar--doubleView .react-calendar__viewContainer > * {
-    width: 100%; /* 🔥 take full width */
-    margin: 0.25em 0; /* 🔥 reduce spacing */
+    width: 100%;
+    margin: 0.25em 0;
   }
 
   .react-calendar__navigation {
-    height: 36px; /* 🔥 smaller nav on mobile */
+    height: 36px;
   }
 
   .react-calendar__navigation button {
-    min-width: 36px; /* 🔥 shrink buttons */
-    font-size: 0.8em; /* 🔥 smaller text */
+    min-width: 36px;
+    font-size: 0.8em;
   }
 
   .react-calendar__tile {
-    padding: 8px 4px; /* 🔥 smaller padding for tiles */
-    font-size: 0.75em; /* 🔥 smaller font size */
+    padding: 8px 4px;
+    font-size: 0.75em;
   }
 }
 
 @media (max-width: 480px) {
   .react-calendar__tile {
-    padding: 6px 3px; /* 🔥 compact for small screens */
+    padding: 6px 3px;
     font-size: 0.7em;
   }
 

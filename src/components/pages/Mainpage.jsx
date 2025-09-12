@@ -9,7 +9,7 @@ const Mainpage = () => {
   const [activeStartDate, setActiveStartDate] = useState(new Date());
   const [showCalen, setCalen] = useState(true);
 
-  // ⬇ Load initial tasks from localStorage (or empty object if none)
+
   const [tasks, setTasks] = useState(() => {
     const saved = localStorage.getItem("tasks");
     return saved ? JSON.parse(saved) : {};
@@ -37,7 +37,7 @@ const Mainpage = () => {
     });
   };
 
-  // ⬇ Save to localStorage every time tasks change
+
   useEffect(() => {
     localStorage.setItem("tasks", JSON.stringify(tasks));
   }, [tasks]);
