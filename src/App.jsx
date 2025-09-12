@@ -29,7 +29,7 @@ function App() {
       <Routes>
         <Route
           path="/main"
-          element={<Mainpage userlist={userlist} setuserlogin={setuserlogin} />}
+          element={<Mainpage setuserlogin={setuserlogin} />}
         />
         <Route
           path="/"

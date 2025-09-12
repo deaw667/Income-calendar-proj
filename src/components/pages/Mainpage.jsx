@@ -3,12 +3,13 @@ import CalendarComp from "../elements/CalendarComp";
 import CalendarList from "../elements/CalendarList";
 import HeaderComp from "../elements/HeaderComp";
 import { motion } from "motion/react";
+import { useNavigate } from "react-router-dom";
 
-const Mainpage = () => {
+const Mainpage = ({ setuserlogin }) => {
   const [date, setDate] = useState(new Date());
   const [activeStartDate, setActiveStartDate] = useState(new Date());
   const [showCalen, setCalen] = useState(true);
-
+  const navigate = useNavigate();
 
   const [tasks, setTasks] = useState(() => {
     const saved = localStorage.getItem("tasks");
@@ -37,6 +38,12 @@ const Mainpage = () => {
     });
   };
 
+  useEffect(() => {
+    const loggedIn = localStorage.getItem("setuserlogin");
+    if (loggedIn === "false") {
+      navigate("/");
+    }
+  }, []);
 
   useEffect(() => {
     localStorage.setItem("tasks", JSON.stringify(tasks));
