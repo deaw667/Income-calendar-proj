@@ -42,6 +42,8 @@ const Mainpage = ({ setuserlogin }) => {
     const loggedIn = localStorage.getItem("setuserlogin");
     if (loggedIn === "false") {
       navigate("/");
+    } else{
+      navigate("/main");
     }
   }, []);
 
