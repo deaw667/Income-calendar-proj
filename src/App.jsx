@@ -19,7 +19,6 @@ function App() {
     AddUser((prev) => [...prev, newUser]);
   };
 
-
   useEffect(() => {
     localStorage.setItem("users", JSON.stringify(userlist));
   }, [userlist]);
@@ -27,10 +26,6 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route
-          path="/main"
-          element={<Mainpage setuserlogin={setuserlogin} />}
-        />
         <Route
           path="/"
           element={
@@ -40,6 +35,10 @@ function App() {
               userlogged={userlogged}
             />
           }
+        />
+        <Route
+          path="/main"
+          element={<Mainpage setuserlogin={setuserlogin} />}
         />
         <Route
           path="/register"
