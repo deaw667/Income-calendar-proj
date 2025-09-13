@@ -9,7 +9,7 @@ const LoginPage = ({ userlist, setuserlogin }) => {
   useEffect(() => {
     const loggedIn = localStorage.getItem("setuserlogin");
     if (loggedIn === "true") {
-      navigate("/main");
+      navigate("/mainpage");
     }
   }, []);
 
@@ -22,7 +22,7 @@ const LoginPage = ({ userlist, setuserlogin }) => {
 
     if (foundUser) {
       localStorage.setItem("setuserlogin", "true");
-      navigate("/main");
+      navigate("/mainpage");
     } else {
       alert("Your password or username is incorrect");
     }

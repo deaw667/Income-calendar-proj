@@ -43,7 +43,7 @@ const Mainpage = ({ setuserlogin }) => {
     if (loggedIn === "false") {
       navigate("/");
     } else{
-      navigate("/main");
+      navigate("/mainpage");
     }
   }, []);
 

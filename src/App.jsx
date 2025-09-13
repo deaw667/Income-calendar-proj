@@ -37,7 +37,7 @@ function App() {
           }
         />
         <Route
-          path="/main"
+          path="/mainpage"
           element={<Mainpage setuserlogin={setuserlogin} />}
         />
         <Route
