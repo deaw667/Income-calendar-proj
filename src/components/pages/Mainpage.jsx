@@ -39,6 +39,13 @@ const Mainpage = ({ setuserlogin }) => {
   };
 
   useEffect(() => {
+    const loggedIn = localStorage.getItem("setuserlogin");
+    if (loggedIn === "false") {
+      navigate("/");
+    }
+  }, []);
+
+  useEffect(() => {
     localStorage.setItem("tasks", JSON.stringify(tasks));
   }, [tasks]);
 
