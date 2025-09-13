@@ -1,11 +1,18 @@
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  HashRouter as Router,
+  Routes,
+  Route,
+  useLocation,
+} from "react-router-dom";
 import Mainpage from "./components/pages/Mainpage";
 import LoginPage from "./components/pages/LoginPage";
 import RegisterPage from "./components/pages/RegisterPage";
 import { useState, useEffect } from "react";
 
 function App() {
+  const location = useLocation();
+
   const [userlist, AddUser] = useState(() => {
     const savedUsers = localStorage.getItem("users");
     return savedUsers
@@ -25,7 +32,7 @@ function App() {
 
   return (
     <Router>
-      <Routes>
+      <Routes location={location} key={location.pathname}>
         <Route
           path="/"
           element={
